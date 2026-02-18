@@ -1,0 +1,73 @@
+{
+  "common": {
+    "appName": "Fitness Tracker",
+    "loading": "Betöltés...",
+    "save": "Mentés",
+    "cancel": "Mégse",
+    "delete": "Törlés",
+    "edit": "Szerkesztés",
+    "close": "Bezárás",
+    "back": "Vissza",
+    "next": "Következő",
+    "yes": "Igen",
+    "no": "Nem",
+    "error": "Hiba",
+    "success": "Sikeres",
+    "warning": "Figyelmeztetés"
+  },
+  "auth": {
+    "login": "Bejelentkezés",
+    "logout": "Kijelentkezés",
+    "register": "Regisztráció",
+    "email": "E-mail cím",
+    "password": "Jelszó",
+    "confirmPassword": "Jelszó megerősítése",
+    "forgotPassword": "Elfelejtett jelszó?",
+    "resetPassword": "Jelszó visszaállítása",
+    "sendResetEmail": "Visszaállító e-mail küldése",
+    "noAccount": "Még nincs fiókod?",
+    "hasAccount": "Már van fiókod?",
+    "loginHere": "Jelentkezz be itt",
+    "registerHere": "Regisztrálj itt",
+    "loginSuccess": "Sikeres bejelentkezés!",
+    "logoutSuccess": "Sikeresen kijelentkeztél.",
+    "registerSuccess": "Sikeres regisztráció! Üdvözlünk!",
+    "emailPlaceholder": "pelda@email.com",
+    "passwordPlaceholder": "Minimum 8 karakter",
+    "errors": {
+      "invalidEmail": "Érvénytelen e-mail formátum.",
+      "weakPassword": "A jelszónak legalább 8 karakter hosszúnak kell lennie, tartalmazzon kis- és nagybetűt, valamint számot.",
+      "passwordMismatch": "A két jelszó nem egyezik.",
+      "emailInUse": "Ez az e-mail cím már foglalt. Próbálj bejelentkezni.",
+      "wrongPassword": "Hibás e-mail cím vagy jelszó.",
+      "userNotFound": "Nem található fiók ezzel az e-mail címmel.",
+      "tooManyRequests": "Túl sok sikertelen kísérlet. Próbáld újra később.",
+      "generic": "Hiba történt. Kérjük, próbáld újra."
+    }
+  },
+  "nav": {
+    "dashboard": "Irányítópult",
+    "workouts": "Edzések",
+    "goals": "Célok",
+    "statistics": "Statisztikák",
+    "profile": "Profil",
+    "settings": "Beállítások",
+    "admin": "Adminisztráció"
+  },
+  "dashboard": {
+    "welcome": "Üdvözöllek",
+    "todayWorkouts": "Mai edzések",
+    "weeklyGoal": "Heti cél",
+    "totalWorkouts": "Összes edzés",
+    "noWorkouts": "Még nincsenek rögzített edzések.",
+    "startFirst": "Rögzítsd az első edzésedet!"
+  },
+  "settings": {
+    "language": "Nyelv",
+    "theme": "Téma",
+    "lightTheme": "Világos",
+    "darkTheme": "Sötét",
+    "hungarian": "Magyar",
+    "english": "English"
+  }
+}

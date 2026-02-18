@@ -1,0 +1,73 @@
+{
+  "common": {
+    "appName": "Fitness Tracker",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "yes": "Yes",
+    "no": "No",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "email": "Email address",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "forgotPassword": "Forgot password?",
+    "resetPassword": "Reset password",
+    "sendResetEmail": "Send reset email",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "loginHere": "Log in here",
+    "registerHere": "Register here",
+    "loginSuccess": "Successfully logged in!",
+    "logoutSuccess": "You have been logged out.",
+    "registerSuccess": "Registration successful! Welcome!",
+    "emailPlaceholder": "example@email.com",
+    "passwordPlaceholder": "At least 8 characters",
+    "errors": {
+      "invalidEmail": "Invalid email format.",
+      "weakPassword": "Password must be at least 8 characters and include uppercase, lowercase letters and a number.",
+      "passwordMismatch": "Passwords do not match.",
+      "emailInUse": "This email is already in use. Try logging in.",
+      "wrongPassword": "Incorrect email or password.",
+      "userNotFound": "No account found with this email.",
+      "tooManyRequests": "Too many failed attempts. Please try again later.",
+      "generic": "An error occurred. Please try again."
+    }
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "workouts": "Workouts",
+    "goals": "Goals",
+    "statistics": "Statistics",
+    "profile": "Profile",
+    "settings": "Settings",
+    "admin": "Administration"
+  },
+  "dashboard": {
+    "welcome": "Welcome",
+    "todayWorkouts": "Today's workouts",
+    "weeklyGoal": "Weekly goal",
+    "totalWorkouts": "Total workouts",
+    "noWorkouts": "No workouts recorded yet.",
+    "startFirst": "Log your first workout!"
+  },
+  "settings": {
+    "language": "Language",
+    "theme": "Theme",
+    "lightTheme": "Light",
+    "darkTheme": "Dark",
+    "hungarian": "Magyar",
+    "english": "English"
+  }
+}

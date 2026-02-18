@@ -1,0 +1,123 @@
+.dashboard-layout {
+  min-height: 100vh;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.dash-header {
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  flex-wrap: wrap;
+}
+
+.dash-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  flex-shrink: 0;
+}
+
+.dash-brand-name {
+  display: none;
+}
+
+@media (min-width: 480px) {
+  .dash-brand-name { display: inline; }
+}
+
+.dash-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex: 1;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.dash-nav::-webkit-scrollbar { display: none; }
+
+.dash-nav-link {
+  padding: 0.375rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+  text-decoration: none;
+}
+
+.dash-nav-link:hover,
+.dash-nav-link.active {
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.dash-header-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.dash-main {
+  flex: 1;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dash-welcome h2 {
+  font-size: 1.25rem;
+}
+
+.dash-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+@media (min-width: 480px) {
+  .dash-stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 768px) {
+  .dash-stats-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.dash-stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.dash-stat-icon {
+  font-size: 2rem;
+}
+
+.dash-stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.dash-stat-label {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+}

@@ -101,6 +101,13 @@ img {
   display: block;
 }
 
+.lp-logo-img {
+  width: 52px !important;
+  height: 52px !important;
+  max-width: none !important;
+  object-fit: cover !important;
+}
+
 a {
   color: var(--color-primary);
   text-decoration: none;

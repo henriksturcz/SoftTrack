@@ -17,15 +17,7 @@ function App() {
       <ThemeProvider>
         <AuthProvider>
           <Routes>
-            <Route path="/login" element={
-              <PublicOnlyRoute><LoginPage /></PublicOnlyRoute>
-            } />
-            <Route path="/register" element={
-              <PublicOnlyRoute><RegisterPage /></PublicOnlyRoute>
-            } />
-            <Route path="/forgot-password" element={
-              <PublicOnlyRoute><ForgotPasswordPage /></PublicOnlyRoute>
-            } />
+            <Route path="/login" element={<PublicOnlyRoute><LoginPage /></PublicOnlyRoute>} />
 
             <Route path="/dashboard" element={
               <ProtectedRoute><DashboardPage /></ProtectedRoute>

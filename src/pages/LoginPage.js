@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
 import logo from "../assets/softtrack-logo.png";
-import fortaFont from "../assets/Forta.ttf";
 import "./LoginPage.css";
 
 const PASSWORD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}$/;
@@ -102,16 +101,14 @@ const GIcon = () => (
 
 function FeatureTicker({ features }) {
   const [active, setActive] = useState(0);
-  const [prev, setPrev] = useState(null);
   const [animating, setAnimating] = useState(false);
   const timer = useRef(null);
 
   const go = (i) => {
     if (animating || i === active) return;
-    setPrev(active);
     setAnimating(true);
     setActive(i);
-    setTimeout(() => { setPrev(null); setAnimating(false); }, 400);
+    setTimeout(() => setAnimating(false), 400);
     clearInterval(timer.current);
     timer.current = setInterval(() => advance(), 6000);
   };
@@ -119,9 +116,8 @@ function FeatureTicker({ features }) {
   const advance = () => {
     setActive(p => {
       const next = (p + 1) % features.length;
-      setPrev(p);
       setAnimating(true);
-      setTimeout(() => { setPrev(null); setAnimating(false); }, 400);
+      setTimeout(() => setAnimating(false), 400);
       return next;
     });
   };
@@ -183,14 +179,7 @@ export default function LoginPage() {
   const getErr = (code) => t.errMap[code] || t.errMap["default"];
 
   useEffect(() => {
-    if (!document.getElementById("forta-font")) {
-      const style = document.createElement("style");
-      style.id = "forta-font";
-      style.textContent = `@font-face { font-family: 'Forta'; src: url('${fortaFont}') format('truetype'); font-weight: normal; font-style: normal; }`;
-      document.head.appendChild(style);
-    }
-
-    const boot = () => {
+const boot = () => {
       if (!window.anime) return;
       const a = window.anime;
       a({ targets: leftRef.current, opacity:[0,1], translateX:[-30,0], duration:700, easing:"easeOutExpo", delay:100 });

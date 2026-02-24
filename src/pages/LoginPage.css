@@ -3,7 +3,7 @@
 * { box-sizing: border-box;
 @font-face {
   font-family: "Forta";
-  src: url("../assets/Forta.ttf") format("truetype");
+  src: url("../assets/fonts/Forta.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -104,8 +104,8 @@
   margin-bottom: 30px;
 }
 .lp-logo-wrap {
-  width: 80px;
-  height: 80px;
+  width: 52px;
+  height: 52px;
   border-radius: 13px;
   overflow: hidden;
   flex-shrink: 0;
@@ -113,16 +113,16 @@
   font-size: 0;
 }
 .lp-logo-img {
-  width: 80px !important;
-  height: 80px !important;
+  width: 52px !important;
+  height: 52px !important;
   max-width: none !important;
   min-height: 52px !important;
   object-fit: cover;
   display: block !important;
 }
 .lp-bname {
-  font-family: 'Forta', sans-serif;
-  font-size: 42px;
+  font-family: 'Forta', 'Syne', sans-serif;
+  font-size: 30px;
   font-weight: normal;
   color: #90EE02;
   letter-spacing: -0.8px;
@@ -132,7 +132,7 @@
 
 .lp-slogan {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(18px, 2.8vw, 30px);
+  font-size: clamp(24px, 2.8vw, 42px);
   font-weight: 700;
   color: #f0f0f0;
   line-height: 1.2;

@@ -2,11 +2,9 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { AuthProvider } from "./contexts/AuthContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import { ProtectedRoute, PublicOnlyRoute, AdminRoute } from "./components/ProtectedRoute";
+import { ProtectedRoute, PublicOnlyRoute} from "./components/ProtectedRoute";
 
 import LoginPage from "./pages/LoginPage";
-import RegisterPage from "./pages/RegisterPage";
-import ForgotPasswordPage from "./pages/ForgotPasswordPage";
 import DashboardPage from "./pages/DashboardPage";
 
 import "./i18n";

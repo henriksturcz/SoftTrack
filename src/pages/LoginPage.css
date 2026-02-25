@@ -2,12 +2,6 @@
 
 * { box-sizing: border-box; }
 
-@font-face {
-  font-family: 'Forta';
-  src: url('/fonts/Forta.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 .lp-root {
   min-height: 100vh;
@@ -121,7 +115,7 @@
   display: block !important;
 }
 .lp-bname {
-  font-family: 'Forta', 'Syne', sans-serif;
+  font-family: 'Syne', sans-serif;
   font-size: 30px;
   font-weight: normal;
   color: #90EE02;

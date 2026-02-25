@@ -104,28 +104,28 @@ function FeatureTicker({ features }) {
   const [animating, setAnimating] = useState(false);
   const timer = useRef(null);
 
+  useEffect(() => {
+    const advance = () => {
+      setActive(p => (p + 1) % features.length);
+      setAnimating(true);
+      setTimeout(() => setAnimating(false), 400);
+    };
+    timer.current = setInterval(advance, 6000);
+    return () => clearInterval(timer.current);
+  }, [features.length]);
+
   const go = (i) => {
     if (animating || i === active) return;
     setAnimating(true);
     setActive(i);
     setTimeout(() => setAnimating(false), 400);
     clearInterval(timer.current);
-    timer.current = setInterval(() => advance(), 6000);
-  };
-
-  const advance = () => {
-    setActive(p => {
-      const next = (p + 1) % features.length;
+    timer.current = setInterval(() => {
+      setActive(p => (p + 1) % features.length);
       setAnimating(true);
       setTimeout(() => setAnimating(false), 400);
-      return next;
-    });
+    }, 6000);
   };
-
-  useEffect(() => {
-    timer.current = setInterval(advance, 6000);
-    return () => clearInterval(timer.current);
-  }, [features.length]);
 
   const f = features[active];
 
@@ -179,7 +179,7 @@ export default function LoginPage() {
   const getErr = (code) => t.errMap[code] || t.errMap["default"];
 
   useEffect(() => {
-const boot = () => {
+    const boot = () => {
       if (!window.anime) return;
       const a = window.anime;
       a({ targets: leftRef.current, opacity:[0,1], translateX:[-30,0], duration:700, easing:"easeOutExpo", delay:100 });
@@ -280,7 +280,6 @@ const boot = () => {
 
       <div className="lp-layout">
         <div className="lp-left" ref={leftRef}>
-
           <div className="lp-brand lp-li">
             <div className="lp-logo-wrap">
               <img src={logo} alt="SoftTrack" className="lp-logo-img"/>
@@ -289,17 +288,13 @@ const boot = () => {
               {"SoftTrack".split("").map((c,i)=><span key={i} className="lp-char">{c}</span>)}
             </span>
           </div>
-
           <div className="lp-slogan lp-li">
             {t.slogan.map((l,i)=><div key={i}>{l}</div>)}
           </div>
-
           <p className="lp-sub2 lp-li">{t.sub}</p>
-
           <div className="lp-li">
             <FeatureTicker features={t.features}/>
           </div>
-
         </div>
 
         <div className="lp-right">

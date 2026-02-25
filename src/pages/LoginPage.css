@@ -2,7 +2,6 @@
 
 * { box-sizing: border-box; }
 
-
 .lp-root {
   min-height: 100vh;
   width: 100%;
@@ -117,7 +116,7 @@
 .lp-bname {
   font-family: 'Syne', sans-serif;
   font-size: 30px;
-  font-weight: normal;
+  font-weight: 800;
   color: #90EE02;
   letter-spacing: -0.8px;
   line-height: 1;
@@ -150,9 +149,7 @@
   max-width: 360px;
 }
 
-.lp-ticker {
-  max-width: 380px;
-}
+.lp-ticker { max-width: 380px; }
 .lp-ticker-tabs {
   display: flex;
   gap: 6px;
@@ -180,10 +177,7 @@
   color: #1a1a1a;
   font-weight: 600;
 }
-.lp-ttab:not(.on):hover {
-  border-color: #555;
-  color: #bbb;
-}
+.lp-ttab:not(.on):hover { border-color: #555; color: #bbb; }
 .lp-ticker-body {
   background: #2a2a2a;
   border: 1.5px solid rgba(144,238,2,0.15);
@@ -198,9 +192,7 @@
   gap: 14px;
   margin-bottom: 14px;
 }
-.lp-ticker-content.entering {
-  animation: tickIn 0.35s ease-out;
-}
+.lp-ticker-content.entering { animation: tickIn 0.35s ease-out; }
 @keyframes tickIn {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -223,11 +215,7 @@
   color: #f0f0f0;
   margin-bottom: 3px;
 }
-.lp-ticker-desc {
-  font-size: 12.5px;
-  color: #777;
-  line-height: 1.45;
-}
+.lp-ticker-desc { font-size: 12.5px; color: #777; line-height: 1.45; }
 .lp-ticker-track {
   height: 2px;
   background: #333;
@@ -259,11 +247,7 @@
   overflow-y: auto;
 }
 
-.lp-card {
-  width: 100%;
-  max-width: 440px;
-  opacity: 0;
-}
+.lp-card { width: 100%; max-width: 440px; opacity: 0; }
 .lp-fw { display: flex; flex-direction: column; }
 
 .lp-tabs {
@@ -360,11 +344,7 @@
   flex-shrink: 0;
 }
 
-.lp-f {
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-}
+.lp-f { margin-bottom: 10px; display: flex; flex-direction: column; }
 .lp-f label {
   font-size: 11px;
   font-weight: 600;
